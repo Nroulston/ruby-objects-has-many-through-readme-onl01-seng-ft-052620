@@ -2,7 +2,7 @@
 class Waiter
   attr_accessor :name, :yrs_experience
 
-  @@all []
+  @@all = []
 
   def initialize(name, yrs_experience)
     self.name = name
@@ -32,4 +32,5 @@ class Waiter
       meal_a.tip <=> meal_b.tip
     end
     best_tipped_meal.customer
+  end
 end
